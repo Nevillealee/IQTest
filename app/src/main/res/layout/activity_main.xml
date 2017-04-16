@@ -12,27 +12,18 @@
         android:padding="16dp"
         tools:context="com.example.android.iqtest.MainActivity">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp">
+        <RelativeLayout style="@style/RelativeLayout_Theme">
 
             <TextView
                 android:id="@+id/number1_Text_View"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:layout_alignParentLeft="true"
-                android:text="1"
-                android:textSize="32sp" />
+                style="@style/Question_Num_Theme"
+                android:text="1" />
 
             <TextView
                 android:id="@+id/first_question"
-                android:layout_width="match_parent"
-                android:layout_height="32dp"
-                android:layout_centerHorizontal="true"
+                style="@style/Question_Theme"
                 android:layout_toRightOf="@id/number1_Text_View"
-                android:text="Swine is to pig as.... is to cow"
-                android:textAppearance="?android:textAppearanceMedium" />
+                android:text="Swine is to pig as.... is to cow" />
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -63,6 +54,155 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="D) Goat" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            style="@style/RelativeLayout_Theme">
+
+            <TextView
+                android:id="@+id/number2_Text_View"
+                style="@style/Question_Num_Theme"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/second_question"
+                style="@style/Question_Theme"
+                android:layout_toRightOf="@id/number2_Text_View"
+                android:text="2-0-4-0-8-0-" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/second_question"
+                android:layout_toRightOf="@id/number2_Text_View">
+
+                <RadioButton
+                    android:id="@+id/q2_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A) 0" />
+
+                <RadioButton
+                    android:id="@+id/q2_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) 2" />
+
+                <RadioButton
+                    android:id="@+id/q2_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) 4" />
+
+                <RadioButton
+                    android:id="@+id/q2_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) 16" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/RelativeLayout_Theme"
+            >
+
+            <TextView
+                style="@style/Question_Num_Theme"
+                android:id="@+id/number3_Text_View"
+                android:text="3"
+                />
+
+            <TextView
+                style="@style/Question_Theme"
+                android:id="@+id/third_question"
+                android:text="All cats have fleas..\nFleas are red.."
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/third_question"
+                android:layout_toRightOf="@id/number3_Text_View">
+
+                <RadioButton
+                    android:id="@+id/q3_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A) All fleas are on cats" />
+
+                <RadioButton
+                    android:id="@+id/q3_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) All cats have red fleas" />
+
+                <RadioButton
+                    android:id="@+id/q3_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) Cats can sometimes have black fleas" />
+
+                <RadioButton
+                    android:id="@+id/q3_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) Dogs never have red fleas" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/RelativeLayout_Theme"
+            >
+
+            <TextView
+                style="@style/Question_Num_Theme"
+                android:id="@+id/number4_Text_View"
+                android:text="4"
+                />
+
+            <TextView
+                style="@style/Question_Theme"
+                android:id="@+id/forth_question"
+                android:layout_toRightOf="@id/number4_Text_View"
+                android:text="All cats have fleas..\nFleas are red.."
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forth_question"
+                android:layout_toRightOf="@id/number3_Text_View">
+
+                <RadioButton
+                    android:id="@+id/q4_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A) All fleas are on cats" />
+
+                <RadioButton
+                    android:id="@+id/q4_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) All cats have red fleas" />
+
+                <RadioButton
+                    android:id="@+id/q4_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) Cats can sometimes have black fleas" />
+
+                <RadioButton
+                    android:id="@+id/q4_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) Dogs never have red fleas" />
 
             </RadioGroup>
         </RelativeLayout>

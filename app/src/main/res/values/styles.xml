@@ -11,15 +11,16 @@
     <!-- Base question number theme. -->
     <style name="Question_Num_Theme">
         <item name="android:layout_width">32dp</item>
-        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentLeft">true</item>
         <item name="android:textSize">32sp</item>
+        <item name="android:gravity">center_horizontal</item>
     </style>
 
     <!-- Base question theme.-->
     <style name="Question_Theme">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
     </style>
