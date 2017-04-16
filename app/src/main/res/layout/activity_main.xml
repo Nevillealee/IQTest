@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="com.example.android.iqtest.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/number1_Text_View"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:text="1"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/first_question"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/number1_Text_View"
+                android:text="Swine is to pig as.... is to cow"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/first_question"
+                android:layout_toRightOf="@id/number1_Text_View">
+
+                <RadioButton
+                    android:id="@+id/q1_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A) Sheep" />
+
+                <RadioButton
+                    android:id="@+id/q1_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B) Buffalo" />
+
+                <RadioButton
+                    android:id="@+id/q1_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C) Horse" />
+
+                <RadioButton
+                    android:id="@+id/q1_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D) Goat" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
