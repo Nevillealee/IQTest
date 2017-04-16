@@ -54,7 +54,7 @@
                     android:id="@+id/q1_d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D) Bull" />
+                    android:text="D) Goat" />
 
             </RadioGroup>
         </RelativeLayout>

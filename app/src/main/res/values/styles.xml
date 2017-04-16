@@ -3,14 +3,14 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">#00592D</item>
+        <item name="colorPrimaryDark">#002E04</item>
+        <item name="colorAccent">#3C8757</item>
     </style>
 
     <!-- Base question number theme. -->
     <style name="Question_Num_Theme">
-        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_width">40dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentLeft">true</item>
         <item name="android:textSize">32sp</item>
