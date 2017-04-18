@@ -3,6 +3,7 @@ package com.example.android.iqtest;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -13,11 +14,12 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import static android.R.attr.button;
+import static android.R.attr.value;
 import static android.R.id.message;
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 
 public class MainActivity extends AppCompatActivity {
-//    int correct =0;
+   static int correct =0;
 //    RadioButton q1Answer = (RadioButton) findViewById(R.id.q1_b);
 //    RadioButton q2Answer = (RadioButton) findViewById(R.id.q2_d);
 //    RadioButton q3Answer = (RadioButton) findViewById(R.id.q3_b);
@@ -33,27 +35,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-    //create button variable
-    public Button dButton;
-    public void whenClicked (View view){
-        //connect dButton variable to Done button in xmlf file by id reference
-        dButton = (Button)findViewById(R.id.done_button);
+
+        //create button variable
+        Button dButton;
+        dButton = (Button) findViewById(R.id.done_button);
         //use OnClick listener method to invoke instructors when done button is pressed
         dButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
-                Intent newScreen = new Intent(MainActivity.this,Results.class);
+                //make intent that changes to new activity
+                Intent newScreen = new Intent(MainActivity.this, Results.class);
+//                newScreen.putExtra("results", correct);
                 startActivity(newScreen);
             }
         });
-        //make intent that changes to new activity
 
-    }
+}
 
-
-
+        public void whenClicked(View view){
+            correct++;
+        }
 
 
 

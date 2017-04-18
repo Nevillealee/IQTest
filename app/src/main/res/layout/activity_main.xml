@@ -43,6 +43,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="B) Bovine"
+                    android:onClick="whenClicked"
                     />
 
                 <RadioButton
@@ -509,7 +510,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Press when finished"
-            android:onClick="whenClicked"
             android:id="@+id/done_button"
             />
     </LinearLayout>
