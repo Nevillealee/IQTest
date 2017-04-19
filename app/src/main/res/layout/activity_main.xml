@@ -61,7 +61,8 @@
             </RadioGroup>
         </RelativeLayout>
 
-        <RelativeLayout style="@style/RelativeLayout_Theme">
+        <RelativeLayout
+            style="@style/RelativeLayout_Theme">
 
             <TextView
                 android:id="@+id/number2_Text_View"
@@ -102,7 +103,8 @@
                     android:id="@+id/q2_d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D) 16" />
+                    android:text="D) 16"
+                    android:onClick="whenClicked"/>
 
             </RadioGroup>
         </RelativeLayout>
@@ -139,7 +141,8 @@
                     android:id="@+id/q3_b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B) All cats have red fleas" />
+                    android:text="B) All cats have red fleas"
+                    android:onClick="whenClicked"/>
 
                 <RadioButton
                     android:id="@+id/q3_c"
@@ -201,7 +204,8 @@
                     android:id="@+id/q4_d"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="D) -17" />
+                    android:text="D) -17"
+                    android:onClick="whenClicked"/>
 
             </RadioGroup>
         </RelativeLayout>
@@ -233,7 +237,8 @@
                     android:id="@+id/q5_a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A) Confident" />
+                    android:text="A) Confident"
+                    android:onClick="whenClicked"/>
 
                 <RadioButton
                     android:id="@+id/q5_b"
@@ -295,7 +300,8 @@
                     android:id="@+id/q6_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C) hem" />
+                    android:text="C) hem"
+                    android:onClick="whenClicked"/>
 
                 <RadioButton
                     android:id="@+id/q6_d"
@@ -339,7 +345,8 @@
                     android:id="@+id/q7_b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B) 12 months" />
+                    android:text="B) 12 months"
+                    android:onClick="whenClicked"/>
 
                 <RadioButton
                     android:id="@+id/q7_c"
@@ -395,7 +402,8 @@
                     android:id="@+id/q8_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C) 2 apples" />
+                    android:text="C) 2 apples"
+                    android:onClick="whenClicked"/>
 
                 <RadioButton
                     android:id="@+id/q8_d"
@@ -445,7 +453,8 @@
                     android:id="@+id/q9_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C) 50" />
+                    android:text="C) 50"
+                    android:onClick="whenClicked"/>
 
                 <RadioButton
                     android:id="@+id/q9_d"
@@ -495,7 +504,8 @@
                     android:id="@+id/q10_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C) TOOMT" />
+                    android:text="C) TOOMT"
+                    android:onClick="whenClicked"/>
 
                 <RadioButton
                     android:id="@+id/q10_d"
@@ -511,6 +521,7 @@
             android:layout_height="wrap_content"
             android:text="Press when finished"
             android:id="@+id/done_button"
+
             />
     </LinearLayout>
 

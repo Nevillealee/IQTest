@@ -13,10 +13,8 @@ public class Results extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
 
-//        TextView finalView = (TextView) findViewById(R.id.results_text_view);
-//        Bundle extras = getIntent().getExtras();
-//        int answers = extras.getInt("results");
-//        finalView.setText(answers); // pass results of test as int
+        TextView finalView = (TextView) findViewById(R.id.results_text_view);
+        finalView.setText(getIntent().getStringExtra("result"));
 
     }
 
