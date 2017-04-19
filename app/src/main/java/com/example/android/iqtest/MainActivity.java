@@ -13,13 +13,14 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import static android.R.attr.button;
+import static android.R.attr.right;
 import static android.R.attr.value;
 import static android.R.id.message;
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
 
 public class MainActivity extends AppCompatActivity {
-    public int correct = 0;
 
+    public int correct;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,47 +36,61 @@ public class MainActivity extends AppCompatActivity {
                 Intent newScreen = new Intent(MainActivity.this, Results.class);
                 newScreen.putExtra("result", String.valueOf(correct));
                 startActivity(newScreen);
+
+
             }
         });
 
-}
 
+    }
     public void whenClicked(View view) {
+
         boolean checked = ((RadioButton) view).isChecked();
         //check how many answers user got right
         switch (view.getId()) {
-            case R.id.first_question:
+            case R.id.q1_b:
                 if (checked)
                     correct++;
-            case R.id.second_question:
+//                Log.i("MainActivity", "The value of correct right now is " + correct);
+                break;
+            case R.id.q2_d:
                 if (checked)
                     correct++;
-            case R.id.third_question:
+                break;
+            case R.id.q3_b:
                 if (checked)
                     correct++;
-            case R.id.forth_question:
+                break;
+            case R.id.q4_d:
                 if (checked)
                     correct++;
-            case R.id.fifth_question:
+                break;
+            case R.id.q5_a:
                 if (checked)
                     correct++;
-            case R.id.sixth_question:
+                break;
+            case R.id.q6_c:
                 if (checked)
                     correct++;
-            case R.id.seventh_question:
+                break;
+            case R.id.q7_b:
                 if (checked)
                     correct++;
-            case R.id.eighth_question:
+                break;
+            case R.id.q8_c:
                 if (checked)
                     correct++;
-            case R.id.nineth_question:
+                break;
+            case R.id.q9_c:
                 if (checked)
                     correct++;
-            case R.id.tenth_question:
+                break;
+            case R.id.q10_c:
                 if (checked)
                     correct++;
                 break;
         }
+
     }
 
 

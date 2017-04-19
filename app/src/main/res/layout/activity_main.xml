@@ -504,8 +504,7 @@
                     android:id="@+id/q10_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="C) TOOMT"
-                    android:onClick="whenClicked"/>
+                    android:text="C) TOOMT" />
 
                 <RadioButton
                     android:id="@+id/q10_d"
