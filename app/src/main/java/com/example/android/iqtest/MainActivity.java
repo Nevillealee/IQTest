@@ -12,8 +12,6 @@ import android.widget.RadioButton;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
 import static android.R.attr.button;
 import static android.R.attr.value;
 import static android.R.id.message;
