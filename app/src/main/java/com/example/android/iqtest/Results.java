@@ -22,8 +22,9 @@ public class Results extends AppCompatActivity {
             if(resArray[j] == 1){
                 correct ++;
             }
+
         }
-        finalView.setText(String.valueOf(correct));
+        finalView.setText(String.valueOf(correct) + " out of 10 correct");
 
 
     }
