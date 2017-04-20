@@ -55,38 +55,47 @@ public class MainActivity extends AppCompatActivity {
             case R.id.q2_d:
                 if (checked)
                     answerTotal[1]= 1;
+                else answerTotal[1] = 0;
                 break;
             case R.id.q3_b:
                 if (checked)
                     answerTotal[2]= 1;
+                else answerTotal[1] = 0;
                 break;
             case R.id.q4_d:
                 if (checked)
                     answerTotal[3]= 1;
+                else answerTotal[1] = 0;
                 break;
             case R.id.q5_a:
                 if (checked)
                     answerTotal[4]= 1;
+                else answerTotal[1] = 0;
                 break;
             case R.id.q6_c:
                 if (checked)
                     answerTotal[5]= 1;
+                else answerTotal[1] = 0;
                 break;
             case R.id.q7_b:
                 if (checked)
                     answerTotal[6]= 1;
+                else answerTotal[1] = 0;
                 break;
             case R.id.q8_c:
                 if (checked)
                     answerTotal[7]= 1;
+                else answerTotal[1] = 0;
                 break;
             case R.id.q9_c:
                 if (checked)
                     answerTotal[8]= 1;
+                else answerTotal[1] = 0;
                 break;
             case R.id.q10_c:
                 if (checked)
                     answerTotal[9]= 1;
+                else answerTotal[1] = 0;
                 break;
         }
 
