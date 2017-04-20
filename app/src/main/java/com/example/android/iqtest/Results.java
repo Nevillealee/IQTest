@@ -8,19 +8,25 @@ import android.widget.TextView;
 
 public class Results extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
 
         TextView finalView = (TextView) findViewById(R.id.results_text_view);
-        finalView.setText(getIntent().getStringExtra("result"));
+
+        int[] resArray = getIntent().getIntArrayExtra("result");
+        int correct =0;
+        for(int j=0; j < resArray.length; j++){
+            if(resArray[j] == 1){
+                correct ++;
+            }
+        }
+        finalView.setText(String.valueOf(correct));
+
 
     }
-
-
-
-
 
 
 }
